@@ -4,6 +4,8 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Enable progressive scroll reveal
+  document.body.classList.add('js-enabled');
 
   // ==========================================================================
   // 1. MOBILE MENU TOGGLE

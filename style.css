@@ -1851,14 +1851,17 @@ body:not(.dark-theme) .icon-moon {
   transform: translateY(-1px);
 }
 
-/* Scroll Reveal effect */
+/* Scroll Reveal effect (Progressive Enhancement) */
 .reveal {
-  opacity: 0;
-  transform: translateY(30px);
   transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.reveal.active {
+body.js-enabled .reveal {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+body.js-enabled .reveal.active {
   opacity: 1;
   transform: translateY(0);
 }
